@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto & Cybersecurity Hub | Daniel</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: #f1f5f9;
+            color: #334155;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        /* --- NAVBAR --- */
+        .navbar {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #e0f2fe;
+            padding: 1.2rem 4rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+            margin-bottom: 30px;
+        }
+
+        .logo {
+            font-size: 1.35rem;
+            font-weight: 700;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #0f172a;
+            text-decoration: none;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 1.8rem;
+            list-style: none;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #475569;
+            position: relative;
+            transition: color 0.2s ease;
+        }
+
+        .navbar-links a:hover, .navbar-links a.active {
+            color: #0284c7;
+        }
+
+        .navbar-links a.active {
+            font-weight: 700;
+        }
+
+        .navbar-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #0284c7;
+            border-radius: 2px;
+        }
+        .container {
+            width: 90%;
+            max-width: 850px;
+            background-color: #ffffff;
+            padding: 40px 50px;
+            border-radius: 12px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        h1, h2, h3, h4 {
+            text-align: center;
+            color: #0f172a;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 8px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        h3 {
+            font-size: 1.2rem;
+            margin: 20px 0 10px 0;
+            color: #1e293b;
+        }
+
+        .author {
+            text-align: center;
+            color: #64748b;
+            font-size: 0.95rem;
+            margin-bottom: 20px;
+        }
+        .section-jump-links {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 0.95rem;
+        }
+
+        .section-jump-links a, .extra-links a, .source-link {
+            color: #0284c7;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        .section-jump-links a:hover, .extra-links a:hover, .source-link:hover {
+            text-decoration: underline;
+            color: #0369a1;
+        }
+
+        hr {
+            border: 0;
+            border-top: 1px solid #e2e8f0;
+            margin: 35px 0;
+        }
+
+        .featured-img {
+            width: 100%;
+            max-height: 320px;
+            object-fit: cover;
+            border-radius: 8px;
+            display: block;
+            margin: 15px 0 10px 0;
+        }
+
+        .source-link {
+            display: block;
+            text-align: center;
+            font-size: 0.85rem;
+            margin-bottom: 15px;
+        }
+
+        .extra-links {
+            text-align: center;
+            margin: 15px 0 25px 0;
+            font-size: 0.9rem;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #475569;
+            margin-bottom: 15px;
+        }
+        .framework-container {
+            display: flex;
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .framework-card {
+            background-color: #f8fafc;
+            padding: 15px;
+            border-radius: 8px;
+            flex: 1;
+            border: 1px solid #e2e8f0;
+        }
+
+        .framework-card img {
+            width: 100%;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 6px;
+            margin-bottom: 10px;
+        }
+
+        .framework-card p {
+            font-size: 0.88rem;
+            margin: 0;
+            color: #475569;
+        }
+
+        .framework-card b {
+            color: #0f172a;
+        }
+        .roadmap-box {
+            background-color: #f8fafc;
+            padding: 25px 35px;
+            border-radius: 8px;
+            border: 1px solid #e2e8f0;
+            margin: 20px 0;
+        }
+
+        .roadmap-box h4 {
+            text-align: left;
+            font-size: 1.1rem;
+            margin-bottom: 12px;
+        }
+
+        ul, ol {
+            line-height: 1.7;
+            color: #475569;
+            padding-left: 20px;
+        }
+
+        li b {
+            color: #0f172a;
+        }
+
+        .center-btn {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .center-btn a {
+            color: #0284c7;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .center-btn a:hover {
+            text-decoration: underline;
+        }
+        @media (max-width: 640px) {
+            .framework-container {
+                flex-direction: column;
+            }
+            .navbar {
+                padding: 1rem 1.5rem;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="navbar">
+        <a href="homepage.html" class="logo">DANIEL</a>
+        <nav class="navbar-links">
+            <a href="homepage.html">Home</a>
+            <a href="aboutme.html">About Me</a>
+            <a href="portfolio.html" class="active">Portfolio</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main class="container">
+
+        <h1>CRYPTO & CYBERSECURITY PORTAL</h1>
+        <div class="author">By Daniel Ray Zuñiga</div>
+
+        <div class="section-jump-links">
+            <a href="#crypto-trends">Crypto Markets</a> |
+            <a href="#trading-strategies">Trading Blueprint</a> |
+            <a href="#cybersecurity">Dream Job: Cybersecurity</a> |
+            <a href="#certifications">Career Roadmap</a>
+        </div>
+
+        <hr>
+        <section id="crypto-trends">
+            <h2>Crypto Trading & Market Trends</h2>
+
+            <h3>1. Technical Analysis and Risk Management in Digital Assets</h3>
+            <img class="featured-img" src="https://images.unsplash.com/photo-1642543492481-44e81e3914a7?w=800" alt="Crypto Trading Chart">
+            <a class="source-link" href="https://www.binance.com/en/academy" target="_blank">Source: Binance Academy</a>
+            
+            <p>Successful cryptocurrency trading requires a disciplined blend of technical analysis, emotional control, and strict position sizing. Traders leverage candlestick patterns, moving averages, and order-book depth to spot potential entries while safeguarding capital with hard stop-loss limits in volatile market conditions.</p>
+
+            <div class="extra-links">
+                <a href="https://www.tradingview.com/" target="_blank">TradingView Analytics</a> |
+                <a href="https://coinmarketcap.com/" target="_blank">CoinMarketCap Data</a> |
+                <a href="https://www.coindesk.com/" target="_blank">CoinDesk News</a>
+            </div>
+
+            <h3>2. Understanding Decentralized Finance (DeFi) & On-Chain Metrics</h3>
+            <img class="featured-img" src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?w=800" alt="Blockchain Network">
+            <a class="source-link" href="https://ethereum.org/en/defi/" target="_blank">Source: Ethereum Foundation</a>
+
+            <p>Beyond simple price charts, institutional traders analyze smart contract volume, Total Value Locked (TVL), and active wallet growth. Monitoring on-chain whale activity provides real-time transparency into capital rotation across major Layer-1 and Layer-2 blockchains.</p>
+
+            <div class="extra-links">
+                <a href="https://defillama.com/" target="_blank">DefiLlama TVL Tracker</a> |
+                <a href="https://dune.com/" target="_blank">Dune On-Chain Dashboards</a> |
+                <a href="https://etherscan.io/" target="_blank">Etherscan Blockchain Explorer</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="trading-strategies">
+            <h2>The 3-Step Crypto Execution Framework</h2>
+            <h3>Tactical Trade Workflow</h3>
+            <a class="source-link" href="https://www.investopedia.com/articles/active-trading/10/5-steps-to-building-a-trading-system.asp" target="_blank">Source: Trading Framework Guide</a>
+
+            <div class="framework-container">
+                <div class="framework-card">
+                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=500" alt="Analysis Stage">
+                    <p><b>Phase 1: Market Scan</b><br>Identify high-volume breakouts using RSI divergence, key support/resistance zones, and market sentiment.</p>
+                </div>
+                <div class="framework-card">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=500" alt="Risk Management">
+                    <p><b>Phase 2: Risk Check</b><br>Calculate entry size based on max 1–2% risk per trade. Set explicit take-profit targets and stop-losses.</p>
+                </div>
+                <div class="framework-card">
+                    <img src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=500" alt="Execution">
+                    <p><b>Phase 3: Execution & Review</b><br>Execute order via exchange API or limit order. Log entry rationale in trading journal for performance audit.</p>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section id="cybersecurity">
+            <h2>My Dream Career: Cybersecurity Analyst & Penetration Tester</h2>
+
+            <h3>1. Securing the Digital Frontier</h3>
+            <img class="featured-img" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800" alt="Cybersecurity Code">
+            <a class="source-link" href="https://www.cisa.gov/" target="_blank">Source: CISA Cybersecurity & Infrastructure Security Agency</a>
+
+            <p>My passion lies in protecting network infrastructure, modern cloud environments, and decentralized protocols from malicious cyber threats. As organizations face sophisticated cyber attacks, the role of ethical hackers and security engineers is crucial to safeguarding critical infrastructure and sensitive data.</p>
+
+            <div class="extra-links">
+                <a href="https://www.cybrary.it/" target="_blank">Cybrary Learning</a> |
+                <a href="https://tryhackme.com/" target="_blank">TryHackMe Labs</a> |
+                <a href="https://www.hackthebox.com/" target="_blank">Hack The Box</a>
+            </div>
+
+            <h3>2. Where Crypto and Cybersecurity Intersect: Smart Contract Auditing</h3>
+            <img class="featured-img" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800" alt="Digital Security Shield">
+            <a class="source-link" href="https://owasp.org/" target="_blank">Source: OWASP Foundation</a>
+
+            <p>Combining crypto trading insights with cybersecurity expertise leads to Web3 security engineering. Smart contract auditors analyze Solidity code, identify reentrancy vulnerabilities, and prevent multi-million dollar exploits in decentralized protocols.</p>
+
+            <div class="extra-links">
+                <a href="https://soliditylang.org/" target="_blank">Solidity Documentation</a> |
+                <a href="https://rekt.news/" target="_blank">Rekt News Exploits</a> |
+                <a href="https://code4rena.com/" target="_blank">Code4rena Audit Contests</a>
+            </div>
+        </section>
+
+        <hr>
+        <section id="certifications">
+            <h2>Cybersecurity Career Roadmap & Certifications</h2>
+            <h3>My Learning Path & Target Skills</h3>
+
+            <img class="featured-img" src="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=800" alt="Server Room Security">
+            <a class="source-link" href="https://www.compTIA.org" target="_blank">Source: CompTIA Certifications</a>
+
+            <div class="roadmap-box">
+                <h4>Essential Certification Path</h4>
+                <ul>
+                    <li><b>CompTIA Security+:</b> Core foundation in networking, threat vectors, and risk management.</li>
+                    <li><b>Network+ / CCNA:</b> Deep dive into TCP/IP, routing, switching, and firewall architecture.</li>
+                    <li><b>Certified Ethical Hacker (CEH):</b> Threat identification and defensive security frameworks.</li>
+                    <li><b>Offensive Security Certified Professional (OSCP):</b> Hands-on penetration testing and exploit development.</li>
+                </ul>
+
+                <h4 style="margin-top: 25px;">Actionable Learning Plan</h4>
+                <ol>
+                    <li>Build a dedicated home lab using virtual machines (Kali Linux, Metasploitable, Security Onion).</li>
+                    <li>Practice real-world scenario challenges daily on TryHackMe and Hack The Box platforms.</li>
+                    <li>Study common Web Application security risks using the OWASP Top 10 framework.</li>
+                    <li>Contribute to bug bounty programs (HackerOne, Bugcrowd) to gain hands-on operational experience.</li>
+                </ol>
+            </div>
+
+            <div class="center-btn">
+                <a href="https://www.hackerone.com/" target="_blank">Explore Bug Bounty Opportunities on HackerOne</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
