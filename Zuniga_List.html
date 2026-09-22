@@ -3,363 +3,287 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>College List Structure | Daniel</title>
-    
-    <style>
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            background-color: #f4f6f9;
-            color: #334155;
-            display: flex;
-            flex-direction: column; 
-            align-items: center;
-            padding-bottom: 50px;
-        }
-        .navbar {
-            width: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #e0f2fe;
-            padding: 1.2rem 4rem;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-            margin-bottom: 30px;
-        }
-
-        .logo {
-            font-size: 1.35rem;
-            font-weight: 700;
-            letter-spacing: 0.12em;
-            text-transform: uppercase;
-            color: #0f172a;
-            text-decoration: none;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 1.8rem;
-            list-style: none;
-        }
-
-        .nav-links a {
-            text-decoration: none;
-            font-size: 0.95rem;
-            font-weight: 500;
-            color: #475569;
-            position: relative;
-            transition: color 0.2s ease;
-        }
-
-        .nav-links a:hover, .nav-links a.active {
-            color: #0284c7;
-        }
-
-        .nav-links a.active {
-            font-weight: 700;
-        }
-
-        .nav-links a.active::after {
-            content: '';
-            position: absolute;
-            bottom: -4px;
-            left: 0;
-            width: 100%;
-            height: 2px;
-            background-color: #0284c7;
-            border-radius: 2px;
-        }
-        .content-container {
-            width: 90%;
-            max-width: 950px;
-            background-color: #ffffff;
-            padding: 40px 50px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-            border: 1px solid #e2e8f0;
-        }
-
-        .page-header {
-            text-align: center;
-            padding-bottom: 20px;
-            border-bottom: 2px solid #e2e8f0;
-            margin-bottom: 30px;
-        }
-
-        .page-header h1 {
-            font-size: 1.8rem;
-            color: #0f172a;
-            letter-spacing: 1px;
-        }
-        ol.main-list {
-            padding-left: 20px;
-        }
-
-        ol.main-list > li {
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #0f172a;
-            margin-top: 25px;
-            margin-bottom: 15px;
-        }
-
-        ol.sub-list {
-            padding-left: 25px;
-            margin-top: 10px;
-            margin-bottom: 15px;
-        }
-
-        ol.sub-list > li {
-            font-size: 1.05rem;
-            font-weight: 600;
-            color: #1e293b;
-            margin-top: 12px;
-            margin-bottom: 8px;
-        }
-
-        ul.detail-list {
-            padding-left: 25px;
-            margin-top: 8px;
-            margin-bottom: 20px;
-        }
-
-        ul.detail-list li {
-            font-size: 0.95rem;
-            font-weight: 400;
-            color: #475569;
-            line-height: 1.6;
-            margin-bottom: 6px;
-        }
-
-        ul.detail-list li b {
-            color: #0f172a;
-        }
-
-        hr.divider {
-            border: 0;
-            border-top: 1px solid #f1f5f9;
-            margin: 25px 0;
-        }
-    </style>
+    <title>College List Structure</title>
 </head>
+<body bgcolor="#f4f6f9" text="#334155">
 
-<body>
-    <header class="navbar">
-        <a href="homepage.html" class="logo">DANIEL</a>
-        <nav class="nav-links">
-            <a href="homepage.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main class="content-container">
+    <table width="100%" bgcolor="#e0f2fe" cellpadding="15" cellspacing="0" border="0">
+        <tr>
+            <td align="left" width="30%">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="homepage.html">
+                    <font face="Arial, sans-serif" color="#0f172a" size="4">
+                        <b>DANIEL</b>
+                    </font>
+                </a>
+            </td>
+            <td align="right" width="70%">
+                <font face="Arial, sans-serif" size="3">
+                    <a href="homepage.html"><font color="#475569">Home</font></a> &nbsp;&nbsp;&nbsp;
+                    <a href="aboutme.html"><font color="#475569">About Me</font></a> &nbsp;&nbsp;&nbsp;
+                    <b><a href="portfolio.html"><font color="#0284c7">Portfolio</font></a></b> &nbsp;&nbsp;&nbsp;
+                    <a href="skills.html"><font color="#475569">Skills</font></a> &nbsp;&nbsp;&nbsp;
+                    <a href="contact.html"><font color="#475569">Contact</font></a>
+                </font>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+    </table>
 
-        <header class="page-header">
-            <h1>COLLEGE OF CYBERSECURITY & DEFENSE</h1>
-        </header>
+    <br><br>
 
-        <ol type="1" class="main-list">
+    <table width="950" align="center" bgcolor="#ffffff" cellpadding="40" cellspacing="0" border="1">
+        <tr>
+            <td>
 
-            <!-- SECTION 1 -->
-            <li>Specialization Tracks
-                <ol type="a" class="sub-list">
+                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                    <tr>
+                        <td align="center">
+                            <h1>
+                                <font face="Arial, sans-serif" color="#0f172a" size="5">
+                                    COLLEGE OF CYBERSECURITY &amp; DEFENSE
+                                </font>
+                            </h1>
+                        </td>
+                    </tr>
+                </table>
 
-                    <li>Offensive Security (Red Teaming)
-                        <ul type="disc" class="detail-list">
-                            <li><b>Penetration Testing:</b> Simulating authorized cyberattacks to identify vulnerabilities in networks, web apps, and systems.</li>
-                            <li><b>Exploit Development:</b> Writing custom scripts and code to test system weaknesses before malicious actors exploit them.</li>
-                            <li><b>Social Engineering:</b> Testing human security awareness through simulated phishing, pretexting, and credential harvesting.</li>
-                            <li><b>Web Application Hacking:</b> Finding flaws like SQL injection, Cross-Site Scripting (XSS), and broken access controls.</li>
-                            <li><b>Wireless Hacking:</b> Intercepting traffic, breaking weak Wi-Fi encryption protocols, and detecting rogue access points.</li>
-                        </ul>
-                    </li>
+                <hr color="#e2e8f0" size="2">
+                <br>
 
-                    <li>Defensive Security (Blue Teaming)
-                        <ul type="circle" class="detail-list">
-                            <li><b>Security Operations (SOC):</b> Monitoring real-time threat intelligence and analyzing system alerts for suspicious behavior.</li>
-                            <li><b>Incident Response:</b> Containing active cyber threats, eradicating malware, and restoring compromised systems safely.</li>
-                            <li><b>Hardening:</b> Configuring firewalls, applying patches, and restricting permissions to minimize the attack surface.</li>
-                        </ul>
-                    </li>
+                <font face="Arial, sans-serif">
+                    <ol type="1">
 
-                    <li>Digital Forensics and Compliance
-                        <ul type="square" class="detail-list">
-                            <li><b>Memory Forensics:</b> Analyzing volatile RAM dumps to recover hidden malware, passwords, and active network connections.</li>
-                            <li><b>Log Analysis:</b> Examining system, server, and firewall logs using SIEM tools to reconstruct attack timelines.</li>
-                            <li><b>Chain of Custody:</b> Preserving digital evidence properly so it remains admissible in legal and corporate proceedings.</li>
-                            <li><b>Regulatory Compliance:</b> Ensuring infrastructure aligns with frameworks like ISO 27001, NIST, GDPR, and PCI-DSS.</li>
-                            <li><b>Risk Management:</b> Assessing potential asset vulnerabilities, calculating risk metrics, and creating mitigation plans.</li>
-                        </ul>
-                    </li>
+                        <li>
+                            <font color="#0f172a" size="4"><b>Specialization Tracks</b></font>
+                            <ol type="a">
 
-                </ol>
-            </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Offensive Security (Red Teaming)</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Penetration Testing:</b></font> Simulating authorized cyberattacks to identify vulnerabilities in networks, web apps, and systems.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Exploit Development:</b></font> Writing custom scripts and code to test system weaknesses before malicious actors exploit them.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Social Engineering:</b></font> Testing human security awareness through simulated phishing, pretexting, and credential harvesting.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Web Application Hacking:</b></font> Finding flaws like SQL injection, Cross-Site Scripting (XSS), and broken access controls.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Wireless Hacking:</b></font> Intercepting traffic, breaking weak Wi-Fi encryption protocols, and detecting rogue access points.</font></li>
+                                    </ul>
+                                </li>
 
-            <hr class="divider">
-            <li>Core Subjects
-                <ol type="A" class="sub-list">
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Defensive Security (Blue Teaming)</b></font>
+                                    <ul type="circle">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Security Operations (SOC):</b></font> Monitoring real-time threat intelligence and analyzing system alerts for suspicious behavior.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Incident Response:</b></font> Containing active cyber threats, eradicating malware, and restoring compromised systems safely.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Hardening:</b></font> Configuring firewalls, applying patches, and restricting permissions to minimize the attack surface.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Network Security and Fundamentals
-                        <ul type="disc" class="detail-list">
-                            <li><b>OSI Model:</b> Understanding packet movement across all seven layers from physical hardware to application protocols.</li>
-                            <li><b>Wireshark:</b> Capturing and inspecting live network packets to identify unencrypted traffic and suspicious payloads.</li>
-                            <li><b>Firewalls & IDS/IPS:</b> Deploying network defense rules to block unauthorized connections and detect anomalies.</li>
-                            <li><b>Protocols:</b> Analyzing TCP/IP, UDP, DNS, DHCP, and HTTP/HTTPS behavior under normal and attack conditions.</li>
-                            <li><b>Virtual Private Networks:</b> Encrypting remote connections using IPsec and TLS tunnels to safeguard data transmission.</li>
-                            <li><b>Subnetting:</b> Segmenting network spaces to restrict lateral movement during a security breach.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Digital Forensics and Compliance</b></font>
+                                    <ul type="square">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Memory Forensics:</b></font> Analyzing volatile RAM dumps to recover hidden malware, passwords, and active network connections.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Log Analysis:</b></font> Examining system, server, and firewall logs using SIEM tools to reconstruct attack timelines.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Chain of Custody:</b></font> Preserving digital evidence properly so it remains admissible in legal and corporate proceedings.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Regulatory Compliance:</b></font> Ensuring infrastructure aligns with frameworks like ISO 27001, NIST, GDPR, and PCI-DSS.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Risk Management:</b></font> Assessing potential asset vulnerabilities, calculating risk metrics, and creating mitigation plans.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Cryptography and Encryption
-                        <ul type="circle" class="detail-list">
-                            <li><b>Public Key Infrastructure:</b> Managing asymmetric key pairs, digital certificates, and trusted certificate authorities.</li>
-                            <li><b>Hashing:</b> Verification of file integrity using cryptographic algorithms like SHA-256 and MD5 without reversing functions.</li>
-                        </ul>
-                    </li>
+                            </ol>
+                        </li>
 
-                    <li>Ethical Hacking Methodologies
-                        <ul type="square" class="detail-list">
-                            <li><b>Reconnaissance:</b> Gathering passive and active intelligence about target domains, employee emails, and tech stacks.</li>
-                            <li><b>Scanning & Enumeration:</b> Mapping open ports, active services, and OS versions using tools like Nmap.</li>
-                            <li><b>Gaining Access:</b> Exploiting verified vulnerabilities to establish initial footholds on target machines.</li>
-                            <li><b>Privilege Escalation:</b> Elevating user access privileges from standard accounts to administrative root rights.</li>
-                        </ul>
-                    </li>
+                        <br>
+                        <hr color="#f1f5f9" size="1">
+                        <br>
 
-                </ol>
-            </li>
+                        <li>
+                            <font color="#0f172a" size="4"><b>Core Subjects</b></font>
+                            <ol type="A">
 
-            <hr class="divider">
-            <li>Required Lab Modules
-                <ol type="i" class="sub-list">
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Network Security and Fundamentals</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>OSI Model:</b></font> Understanding packet movement across all seven layers from physical hardware to application protocols.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Wireshark:</b></font> Capturing and inspecting live network packets to identify unencrypted traffic and suspicious payloads.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Firewalls &amp; IDS/IPS:</b></font> Deploying network defense rules to block unauthorized connections and detect anomalies.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Protocols:</b></font> Analyzing TCP/IP, UDP, DNS, DHCP, and HTTP/HTTPS behavior under normal and attack conditions.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Virtual Private Networks:</b></font> Encrypting remote connections using IPsec and TLS tunnels to safeguard data transmission.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Subnetting:</b></font> Segmenting network spaces to restrict lateral movement during a security breach.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Setting Up the Attack Environment
-                        <ul type="disc" class="detail-list">
-                            <li><b>Install Hypervisor:</b> Download VirtualBox or VMware Workstation to run isolated virtual machines safely.</li>
-                            <li><b>Deploy Attack OS:</b> Set up Kali Linux or Parrot OS equipped with pre-installed penetration testing tools.</li>
-                            <li><b>Configure Target Range:</b> Spin up vulnerable lab VMs like Metasploitable or DVWA on an isolated internal network.</li>
-                            <li><b>Establish Snapshots:</b> Save clean state VM snapshots so you can reset systems instantly after breaking them.</li>
-                            <li><b>Verify Isolation:</b> Ensure target host machines cannot leak traffic to your home network or the public internet.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Cryptography and Encryption</b></font>
+                                    <ul type="circle">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Public Key Infrastructure:</b></font> Managing asymmetric key pairs, digital certificates, and trusted certificate authorities.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Hashing:</b></font> Verification of file integrity using cryptographic algorithms like SHA-256 and MD5 without reversing functions.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Analyzing and Exploiting Vulnerabilities
-                        <ul type="circle" class="detail-list">
-                            <li><b>Target Identification:</b> Discover active IP addresses on the lab network using ARP scanning techniques.</li>
-                            <li><b>Service Fingerprinting:</b> Run detailed port scans to identify software versions running on open ports.</li>
-                            <li><b>Search Exploits:</b> Use databases like Exploit-DB to find matching proof-of-concept exploits for discovered versions.</li>
-                            <li><b>Execute Payload:</b> Launch an exploit through Metasploit to drop a interactive reverse shell on the victim machine.</li>
-                            <li><b>Local Reconnaissance:</b> Inspect system environment variables, local files, and running processes.</li>
-                            <li><b>Identify Weakness:</b> Spot misconfigured service permissions, unquoted service paths, or outdated kernel builds.</li>
-                            <li><b>Escalate Rights:</b> Execute privilege escalation vectors to capture system root privileges.</li>
-                            <li><b>Document Findings:</b> Record exact steps, evidence screenshots, and remediation recommendations for reporting.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Ethical Hacking Methodologies</b></font>
+                                    <ul type="square">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Reconnaissance:</b></font> Gathering passive and active intelligence about target domains, employee emails, and tech stacks.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Scanning &amp; Enumeration:</b></font> Mapping open ports, active services, and OS versions using tools like Nmap.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Gaining Access:</b></font> Exploiting verified vulnerabilities to establish initial footholds on target machines.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Privilege Escalation:</b></font> Elevating user access privileges from standard accounts to administrative root rights.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Defensive Hardening and Log Analysis
-                        <ul type="square" class="detail-list">
-                            <li><b>Endpoint Monitoring:</b> Deploying Sysmon and Endpoint Detection tools to track process creation events.</li>
-                            <li><b>Centralized SIEM:</b> Routing host and network event logs to an Elastic Stack or Splunk dashboard for monitoring.</li>
-                            <li><b>Create Detection Rules:</b> Writing custom YARA or Sigma rules to trigger alerts when malicious scripts execute.</li>
-                            <li><b>Block Malicious IPs:</b> Updating firewall tables to drop connections from malicious command-and-control servers.</li>
-                            <li><b>Revoke Compromised Credentials:</b> Forcing password resets and invalidating active session tokens across active directory.</li>
-                            <li><b>Patch Vulnerabilities:</b> Applying missing security updates and closing unused network ports across all systems.</li>
-                        </ul>
-                    </li>
+                            </ol>
+                        </li>
 
-                </ol>
-            </li>
+                        <br>
+                        <hr color="#f1f5f9" size="1">
+                        <br>
 
-            <hr class="divider">
-            <li>Recommended Cybersecurity Books
-                <ol type="I" class="sub-list">
+                        <li>
+                            <font color="#0f172a" size="4"><b>Required Lab Modules</b></font>
+                            <ol type="i">
 
-                    <li>The Web Application Hacker's Handbook
-                        <ul type="disc" class="detail-list">
-                            <li><b>Authentication Flaws:</b> Identifying weaknesses in session management, cookie security, and multi-factor logins.</li>
-                            <li><b>Injection Attacks:</b> Crafting inputs to manipulate SQL queries, OS commands, and LDAP lookups.</li>
-                            <li><b>Logic Flaws:</b> Bypassing application workflows by manipulating parameters and request sequences.</li>
-                            <li><b>Client-Side Threats:</b> Understanding DOM-based vulnerabilities, clickjacking, and CORS misconfigurations.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Setting Up the Attack Environment</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Install Hypervisor:</b></font> Download VirtualBox or VMware Workstation to run isolated virtual machines safely.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Deploy Attack OS:</b></font> Set up Kali Linux or Parrot OS equipped with pre-installed penetration testing tools.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Configure Target Range:</b></font> Spin up vulnerable lab VMs like Metasploitable or DVWA on an isolated internal network.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Establish Snapshots:</b></font> Save clean state VM snapshots so you can reset systems instantly after breaking them.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Verify Isolation:</b></font> Ensure target host machines cannot leak traffic to your home network or the public internet.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Practical Malware Analysis
-                        <ul type="circle" class="detail-list">
-                            <li><b>Static Analysis:</b> Inspecting executable binaries, imported functions, and hardcoded strings without running them.</li>
-                            <li><b>Dynamic Analysis:</b> Running suspicious files inside isolated sandboxes to observe file system and registry changes.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Analyzing and Exploiting Vulnerabilities</b></font>
+                                    <ul type="circle">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Target Identification:</b></font> Discover active IP addresses on the lab network using ARP scanning techniques.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Service Fingerprinting:</b></font> Run detailed port scans to identify software versions running on open ports.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Search Exploits:</b></font> Use databases like Exploit-DB to find matching proof-of-concept exploits for discovered versions.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Execute Payload:</b></font> Launch an exploit through Metasploit to drop a interactive reverse shell on the victim machine.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Local Reconnaissance:</b></font> Inspect system environment variables, local files, and running processes.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Identify Weakness:</b></font> Spot misconfigured service permissions, unquoted service paths, or outdated kernel builds.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Escalate Rights:</b></font> Execute privilege escalation vectors to capture system root privileges.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Document Findings:</b></font> Record exact steps, evidence screenshots, and remediation recommendations for reporting.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Applied Network Security Monitoring
-                        <ul type="square" class="detail-list">
-                            <li><b>Threat Hunting:</b> Proactively searching through network telemetry to uncover persistent undetected adversaries.</li>
-                            <li><b>Packet Crafting:</b> Building custom network packets using Scapy to test network filter controls.</li>
-                            <li><b>Snort & Suricata:</b> Writing signature-based detection rules for open-source Intrusion Detection Systems.</li>
-                            <li><b>Traffic Baselining:</b> Establishing standard network behavior profiles to spot anomalies rapidly.</li>
-                            <li><b>DNS Telemetry:</b> Tracking DNS requests to identify malware beaconing and domain generation algorithms.</li>
-                            <li><b>Decryption Inspection:</b> Setting up inline SSL/TLS inspection to analyze encrypted attack vectors.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Defensive Hardening and Log Analysis</b></font>
+                                    <ul type="square">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Endpoint Monitoring:</b></font> Deploying Sysmon and Endpoint Detection tools to track process creation events.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Centralized SIEM:</b></font> Routing host and network event logs to an Elastic Stack or Splunk dashboard for monitoring.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Create Detection Rules:</b></font> Writing custom YARA or Sigma rules to trigger alerts when malicious scripts execute.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Block Malicious IPs:</b></font> Updating firewall tables to drop connections from malicious command-and-control servers.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Revoke Compromised Credentials:</b></font> Forcing password resets and invalidating active session tokens across active directory.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Patch Vulnerabilities:</b></font> Applying missing security updates and closing unused network ports across all systems.</font></li>
+                                    </ul>
+                                </li>
 
-                </ol>
-            </li>
+                            </ol>
+                        </li>
 
-            <hr class="divider">
-            <li>Grading Criteria Breakdown
-                <ol type="1" class="sub-list">
+                        <br>
+                        <hr color="#f1f5f9" size="1">
+                        <br>
 
-                    <li>Final Practical Exam (Capture The Flag)
-                        <ul type="disc" class="detail-list">
-                            <li><b>Significant Weight:</b> Practical CTFs carry heavy weight—typically accounting for 30% to 50% of your final grade.</li>
-                            <li><b>Essay:</b> Comprehensive threat model assessments requiring written strategic defensive evaluations.</li>
-                            <li><b>Project-Based:</b> Live penetration test evaluations, hands-on red team labs, or technical portfolio reports.</li>
-                            <li><b>Cumulative Scope:</b> Tests all skills covered—from network scanning and initial access to root escalation and reporting.</li>
-                        </ul>
-                    </li>
+                        <li>
+                            <font color="#0f172a" size="4"><b>Recommended Cybersecurity Books</b></font>
+                            <ol type="I">
 
-                    <li>Midterm Penetration Testing Report
-                        <ul type="circle" class="detail-list">
-                            <li><b>Practical Application:</b> Instead of memorizing terms, you conduct an audit on a vulnerable network and report findings.</li>
-                            <li><b>Rubric-Driven:</b> Graded on vulnerability accuracy, executive summary clarity, technical depth, and remediation advice.</li>
-                            <li><b>Literature:</b> Research papers analyzing emerging threat actors, APT strategies, and attack frameworks.</li>
-                            <li><b>Arts:</b> Designing network topology security diagrams, threat landscape infographics, and posture roadmaps.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>The Web Application Hacker's Handbook</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Authentication Flaws:</b></font> Identifying weaknesses in session management, cookie security, and multi-factor logins.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Injection Attacks:</b></font> Crafting inputs to manipulate SQL queries, OS commands, and LDAP lookups.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Logic Flaws:</b></font> Bypassing application workflows by manipulating parameters and request sequences.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Client-Side Threats:</b></font> Understanding DOM-based vulnerabilities, clickjacking, and CORS misconfigurations.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Lab Quizzes and Assignments
-                        <ul type="square" class="detail-list">
-                            <li><b>Purpose:</b> They ensure you complete hands-on lab challenges weekly to prevent cramming before final CTF events.</li>
-                            <li><b>Scope:</b> Covers 1–2 recent security concepts or practical command-line tool usage exercises.</li>
-                            <li><b>Pop Quizzes:</b> Unannounced syntax or protocol checks to ensure you know core tools like Nmap and Metasploit.</li>
-                            <li><b>Concept Checks:</b> Quick 2–3 question evaluations at the start or end of a lab session.</li>
-                            <li><b>Lab Reports:</b> Reinforce concepts through hands-on practice—like analyzing packet captures or writing exploit code.</li>
-                            <li><b>Weight:</b> Ranges from quick port-scanning assignments to complex malware analysis challenges, making up 10% to 25% of your grade.</li>
-                            <li><b>Self-Assessment:</b> Working independently in attack ranges highlights technical skill gaps before high-stakes CTF exams.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Practical Malware Analysis</b></font>
+                                    <ul type="circle">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Static Analysis:</b></font> Inspecting executable binaries, imported functions, and hardcoded strings without running them.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Dynamic Analysis:</b></font> Running suspicious files inside isolated sandboxes to observe file system and registry changes.</font></li>
+                                    </ul>
+                                </li>
 
-                    <li>Class Participation
-                        <ul type="disc" class="detail-list">
-                            <li><b>Quality Over Quantity:</b> Active participation means offering threat insights, helping peers debug scripts, or suggesting attack vectors.</li>
-                            <li><b>Continuous Assessment:</b> Evaluated continuously throughout the term during live attack-and-defense team exercises.</li>
-                            <li><b>Group Work:</b> Collaborating effectively during blue team defense simulations and group incident response drills.</li>
-                            <li><b>Verbal Discussion:</b> Explaining vulnerability impact clearly during threat modeling discussions and debriefs.</li>
-                        </ul>
-                    </li>
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Applied Network Security Monitoring</b></font>
+                                    <ul type="square">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Threat Hunting:</b></font> Proactively searching through network telemetry to uncover persistent undetected adversaries.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Packet Crafting:</b></font> Building custom network packets using Scapy to test network filter controls.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Snort &amp; Suricata:</b></font> Writing signature-based detection rules for open-source Intrusion Detection Systems.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Traffic Baselining:</b></font> Establishing standard network behavior profiles to spot anomalies rapidly.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>DNS Telemetry:</b></font> Tracking DNS requests to identify malware beaconing and domain generation algorithms.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Decryption Inspection:</b></font> Setting up inline SSL/TLS inspection to analyze encrypted attack vectors.</font></li>
+                                    </ul>
+                                </li>
 
-                </ol>
-            </li>
+                            </ol>
+                        </li>
 
-        </ol>
+                        <br>
+                        <hr color="#f1f5f9" size="1">
+                        <br>
 
-    </main>
+                        <li>
+                            <font color="#0f172a" size="4"><b>Grading Criteria Breakdown</b></font>
+                            <ol type="1">
+
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Final Practical Exam (Capture The Flag)</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Significant Weight:</b></font> Practical CTFs carry heavy weight—typically accounting for 30% to 50% of your final grade.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Essay:</b></font> Comprehensive threat model assessments requiring written strategic defensive evaluations.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Project-Based:</b></font> Live penetration test evaluations, hands-on red team labs, or technical portfolio reports.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Cumulative Scope:</b></font> Tests all skills covered—from network scanning and initial access to root escalation and reporting.</font></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Midterm Penetration Testing Report</b></font>
+                                    <ul type="circle">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Practical Application:</b></font> Instead of memorizing terms, you conduct an audit on a vulnerable network and report findings.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Rubric-Driven:</b></font> Graded on vulnerability accuracy, executive summary clarity, technical depth, and remediation advice.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Literature:</b></font> Research papers analyzing emerging threat actors, APT strategies, and attack frameworks.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Arts:</b></font> Designing network topology security diagrams, threat landscape infographics, and posture roadmaps.</font></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Lab Quizzes and Assignments</b></font>
+                                    <ul type="square">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Purpose:</b></font> They ensure you complete hands-on lab challenges weekly to prevent cramming before final CTF events.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Scope:</b></font> Covers 1–2 recent security concepts or practical command-line tool usage exercises.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Pop Quizzes:</b></font> Unannounced syntax or protocol checks to ensure you know core tools like Nmap and Metasploit.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Concept Checks:</b></font> Quick 2–3 question evaluations at the start or end of a lab session.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Lab Reports:</b></font> Reinforce concepts through hands-on practice—like analyzing packet captures or writing exploit code.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Weight:</b></font> Ranges from quick port-scanning assignments to complex malware analysis challenges, making up 10% to 25% of your grade.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Self-Assessment:</b></font> Working independently in attack ranges highlights technical skill gaps before high-stakes CTF exams.</font></li>
+                                    </ul>
+                                </li>
+
+                                <li>
+                                    <font color="#1e293b" size="3"><b>Class Participation</b></font>
+                                    <ul type="disc">
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Quality Over Quantity:</b></font> Active participation means offering threat insights, helping peers debug scripts, or suggesting attack vectors.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Continuous Assessment:</b></font> Evaluated continuously throughout the term during live attack-and-defense team exercises.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Group Work:</b></font> Collaborating effectively during blue team defense simulations and group incident response drills.</font></li>
+                                        <li><font color="#475569" size="2"><font color="#0f172a"><b>Verbal Discussion:</b></font> Explaining vulnerability impact clearly during threat modeling discussions and debriefs.</font></li>
+                                    </ul>
+                                </li>
+
+                            </ol>
+                        </li>
+
+                    </ol>
+                </font>
+
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
 
 </body>
 </html>

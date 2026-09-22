@@ -1,220 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activity Table Submission | Daniel</title>
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: #f1f5f9;
-            color: #334155;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 50px;
-            padding-top: 90px;
-        }
-        .navbar {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 65px;
-            background-color: #e0f2fe;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 0 4rem;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
-            z-index: 9999;
-        }
-
-        .logo {
-            font-size: 1.25rem;
-            font-weight: 800;
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            color: #0f172a;
-            text-decoration: none !important;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            align-items: center;
-        }
-
-        .nav-links a {
-            text-decoration: none !important;
-            color: #334155;
-            font-size: 0.95rem;
-            font-weight: 500;
-            padding-bottom: 3px;
-            border-bottom: 2px solid transparent;
-            transition: all 0.2s ease;
-        }
-
-        .nav-links a:hover {
-            color: #0284c7;
-        }
-
-        .nav-links a.active {
-            color: #0284c7;
-            font-weight: 700;
-            border-bottom: 2px solid #0284c7;
-        }
-
-
-        .container {
-            width: 90%;
-            max-width: 900px;
-            background-color: #ffffff;
-            padding: 40px 45px;
-            border-radius: 12px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
-        }
-
-        .page-title {
-            text-align: center;
-            font-size: 2rem;
-            color: #0f172a;
-            margin-bottom: 25px;
-            font-weight: 700;
-        }
-
-        .section-title {
-            text-align: center;
-            font-size: 1.35rem;
-            color: #1e293b;
-            margin: 30px 0 15px 0;
-            font-weight: 600;
-        }
-        .styled-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-bottom: 25px;
-            font-size: 0.95rem;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-        }
-
-        .styled-table th, .styled-table td {
-            padding: 12px 16px;
-            text-align: left;
-            border: 1px solid #cbd5e1;
-        }
-
-        .styled-table th {
-            background-color: #f8fafc;
-            color: #0f172a;
-            font-weight: 700;
-        }
-
-        .styled-table td {
-            color: #334155;
-            background-color: #ffffff;
-        }
-
-        .styled-table tbody tr:hover {
-            background-color: #f1f5f9;
-        }
-    </style>
+    <title>Table</title>
 </head>
+<body bgcolor="#f1f5f9" text="#334155">
 
-<body>
-    <header class="navbar">
-        <a href="homepage.html" class="logo">DANIEL</a>
-        <nav class="nav-links">
-            <a href="homepage.html">Home</a>
-            <a href="aboutme.html">About Me</a>
-            <a href="portfolio.html" class="active">Portfolio</a>
-            <a href="skills.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main class="container">
-        <h1 class="page-title">Activity Table Submission</h1>
+    <table width="100%" bgcolor="#e0f2fe" cellpadding="15" cellspacing="0" border="0">
+        <tr>
+            <td align="left" width="30%">
+                &nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="homepage.html">
+                    <font face="Arial, sans-serif" color="#0f172a" size="4">
+                        <b>DANIEL</b>
+                    </font>
+                </a>
+            </td>
+            <td align="right" width="70%">
+                <font face="Arial, sans-serif" size="3">
+                    <a href="homepage.html"><font color="#475569">Home</font></a> &nbsp;&nbsp;&nbsp;
+                    <a href="aboutme.html"><font color="#475569">About Me</font></a> &nbsp;&nbsp;&nbsp;
+                    <b><a href="portfolio.html"><font color="#0284c7">Portfolio</font></a></b> &nbsp;&nbsp;&nbsp;
+                    <a href="skills.html"><font color="#475569">Skills</font></a> &nbsp;&nbsp;&nbsp;
+                    <a href="contact.html"><font color="#475569">Contact</font></a>
+                </font>
+                &nbsp;&nbsp;&nbsp;&nbsp;
+            </td>
+        </tr>
+    </table>
 
-        <h2 class="section-title">1. Weekly Schedule</h2>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Subject Code</th>
-                    <th>Subject Name</th>
-                    <th>Day</th>
-                    <th>Time</th>
-                    <th>Room</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>IT106</td>
-                    <td>IT Fundamentals</td>
-                    <td>Friday</td>
-                    <td>10:30 AM - 1:30 PM</td>
-                    <td>Lab 1</td>
-                </tr>
-                <tr>
-                    <td>IT204</td>
-                    <td>Web Systems</td>
-                    <td>Wednesday</td>
-                    <td>10:30 AM - 1:30 PM</td>
-                    <td>IT-204</td>
-                </tr>
-                <tr>
-                    <td>IT204</td>
-                    <td>Database Systems</td>
-                    <td>Tuesday</td>
-                    <td>2:00 PM - 5:00 PM</td>
-                    <td>Lab 2</td>
-                </tr>
-            </tbody>
-        </table>
+    <br><br>
 
-        <h2 class="section-title">2. Student Information</h2>
-        <table class="styled-table">
-            <thead>
-                <tr>
-                    <th>Student ID</th>
-                    <th>Name</th>
-                    <th>Year Level</th>
-                    <th>Status</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>2026-001</td>
-                    <td>Daniel Zuniga</td>
-                    <td>1st Year</td>
-                    <td>Enrolled</td>
-                </tr>
-                <tr>
-                    <td>2026-002</td>
-                    <td>Maria Santos</td>
-                    <td>1st Year</td>
-                    <td>Enrolled</td>
-                </tr>
-                <tr>
-                    <td>2026-003</td>
-                    <td>Gomer Gelilio</td>
-                    <td>1st Year</td>
-                    <td>Enrolled</td>
-                </tr>
-            </tbody>
-        </table>
-    </main>
+    <table width="850" align="center" bgcolor="#ffffff" cellpadding="40" cellspacing="0" border="1">
+        <tr>
+            <td>
+
+                <p align="center">
+                    <h1>
+                        <font face="Arial, sans-serif" color="#0f172a" size="6">
+                            Activity Table Submission
+                        </font>
+                    </h1>
+                </p>
+
+                <br>
+
+                <h2>
+                    <font face="Arial, sans-serif" color="#1e293b" size="4">
+                        1. Weekly Schedule
+                    </font>
+                </h2>
+
+                <table width="100%" cellpadding="12" cellspacing="0" border="1">
+                    <thead>
+                        <tr bgcolor="#f8fafc">
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Subject Code</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Subject Name</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Day</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Time</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Room</font></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">IT106</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">IT Fundamentals</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Friday</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">10:30 AM - 1:30 PM</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Lab 1</font></td>
+                        </tr>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">IT204</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Web Systems</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Wednesday</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">10:30 AM - 1:30 PM</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">IT-204</font></td>
+                        </tr>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">IT204</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Database Systems</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Tuesday</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">2:00 PM - 5:00 PM</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Lab 2</font></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <br><br>
+
+                <h2>
+                    <font face="Arial, sans-serif" color="#1e293b" size="4">
+                        2. Student Information
+                    </font>
+                </h2>
+
+                <table width="100%" cellpadding="12" cellspacing="0" border="1">
+                    <thead>
+                        <tr bgcolor="#f8fafc">
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Student ID</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Name</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Year Level</font></th>
+                            <th align="left"><font face="Arial, sans-serif" color="#0f172a">Status</font></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">2026-001</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Daniel Zuniga</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">1st Year</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Enrolled</font></td>
+                        </tr>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">2026-002</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Maria Santos</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">1st Year</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Enrolled</font></td>
+                        </tr>
+                        <tr bgcolor="#ffffff">
+                            <td><font face="Arial, sans-serif" color="#334155">2026-003</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Gomer Gelilio</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">1st Year</font></td>
+                            <td><font face="Arial, sans-serif" color="#334155">Enrolled</font></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+    <br><br>
 
 </body>
 </html>
